@@ -4,11 +4,20 @@
     background: white;
 }
 
+.red {
+
+    background: red;
+}
+
+.green {
+    background: #00e0b7;
+}
+
 button {
     margin: -2px;
     padding: 0;
     border: 0;
-    width: 90px;
+    width: 123px;
     height: 60px;
     background: #585b60;
     color: white;

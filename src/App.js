@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Calc from './containers/Calc/Calc';
+import Gate from './containers/Gate/Gate';
 
 class App extends Component {
     render() {
         return (
         <div className="App">
-            <Calc/>
+            <Gate/>
         </div>
         );
     }
