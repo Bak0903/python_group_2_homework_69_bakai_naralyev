@@ -9,10 +9,12 @@ const initialState = {
 
 
 const reducer = (state = initialState, action) => {
+
     const success = {color: 'green', text: 'Access Granted'};
     const tryAgain = {color: 'red', text: 'Try again'};
     switch (action.type) {
         case 'CHOOSE':
+            console.log('privet');
             if (state.tries.length < 4)
                 return {...state, tries: state.tries + action.amount};
             else return state;
