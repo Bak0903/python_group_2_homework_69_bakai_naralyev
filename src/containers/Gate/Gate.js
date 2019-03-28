@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 import './Gate.css';
+import Screen from '../../components/Screen/Screen';
 
 
 class Calc extends Component {
@@ -11,10 +12,7 @@ class Calc extends Component {
             str+='*';
       return (
       <div className="Calc">
-          <div className={"Screen " + result.color}>
-              <h2>{result.text}</h2>
-              <h2>{str}</h2>
-              </div>
+          <Screen/>
           <div className="Buttons">
               <button onClick={() => actionChoose('7')}>7</button>
               <button onClick={() => actionChoose('8')}>8</button>
